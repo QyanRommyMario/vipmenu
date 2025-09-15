@@ -1,0 +1,22 @@
+.main-nav {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 1.5rem 0 0.5rem 0;
+}
+.main-nav a {
+  color: #3b3b6d;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border 0.2s, color 0.2s;
+}
+.main-nav a.active {
+  color: #2d2d4d;
+  border-bottom: 2px solid #4f46e5;
+}
+.main-nav a:hover {
+  color: #4f46e5;
+}

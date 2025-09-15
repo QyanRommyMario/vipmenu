@@ -1,0 +1,48 @@
+.menu-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+}
+
+.menu-item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 1.5rem;
+}
+
+.item-details {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.item-details h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.item-details p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.price {
+  font-weight: bold;
+  color: #333;
+}
+
+.menu-item button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.menu-item button:hover {
+  background-color: #218838;
+}

@@ -1,0 +1,34 @@
+.order-history-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #f7f8fa;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(80,80,180,0.08);
+  padding: 2rem 2.5rem;
+}
+.order-history-container h2 {
+  color: #3b3b6d;
+  margin-bottom: 1.5rem;
+}
+.order-list {
+  list-style: none;
+  padding: 0;
+}
+.order-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e7ff;
+}
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  color: #2d2d4d;
+  margin-bottom: 0.5rem;
+}
+.order-items {
+  list-style: disc inside;
+  margin-left: 1rem;
+  color: #444;
+}

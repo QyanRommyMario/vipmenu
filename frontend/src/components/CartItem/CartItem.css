@@ -1,0 +1,34 @@
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.cart-item-info {
+  text-align: left;
+}
+
+.cart-item-info p {
+  margin: 0.2rem 0;
+  color: #666;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-controls button {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.quantity-controls span {
+  margin: 0 1rem;
+  font-weight: bold;
+}
