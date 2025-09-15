@@ -27,12 +27,11 @@ const OrderHistory = () => {
             <li key={order.id} className="order-item">
               <div className="order-header">
                 <span>Order #{order.id}</span>
-                <span>Total: Rp{order.total.toLocaleString()}</span>
               </div>
               <ul className="order-items">
                 {order.items.map((item) => (
                   <li key={item.id}>
-                    {item.name} x {item.quantity} @ Rp{item.price.toLocaleString()}
+                    {item.name} x {item.quantity}
                   </li>
                 ))}
               </ul>

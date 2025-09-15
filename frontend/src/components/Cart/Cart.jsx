@@ -7,10 +7,7 @@ import "./Cart.css";
 const Cart = () => {
   const { cartItems } = useContext(CartContext);
 
-  const totalPrice = cartItems.reduce(
-    (total, item) => total + item.price * item.quantity,
-    0
-  );
+
 
   return (
     <div className="cart-container">
@@ -23,10 +20,6 @@ const Cart = () => {
             <CartItem key={item.id} item={item} />
           ))}
           <hr />
-          <div className="total">
-            <strong>Total:</strong>
-            <strong>Rp{totalPrice.toLocaleString()}</strong>
-          </div>
           <Order />
         </>
       )}

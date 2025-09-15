@@ -21,7 +21,6 @@ const CartItem = ({ item }) => {
     <div className="cart-item">
       <div className="cart-item-info">
         <strong>{item.name}</strong>
-        <p>Rp{item.price.toLocaleString()}</p>
       </div>
       <div className="quantity-controls">
         <button onClick={handleDecrease}>-</button>

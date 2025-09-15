@@ -16,9 +16,8 @@ const MenuItem = ({ item }) => {
     <div className="menu-item">
       <img src={item.image} alt={item.name} className="menu-item-image" />
       <div className="item-details">
-        <h3>{item.name}</h3>
-        <p>{item.description}</p>
-        <p className="price">Rp{item.price.toLocaleString()}</p>
+  <h3>{item.name}</h3>
+  <p>{item.description}</p>
       </div>
       <button onClick={handleAddToCart}>Tambah</button>
     </div>

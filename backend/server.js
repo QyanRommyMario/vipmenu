@@ -8,9 +8,11 @@ app.use(express.json());
 
 // Dummy data
 let menu = [
-  { id: 1, name: "Nasi Goreng", price: 20000 },
-  { id: 2, name: "Mie Ayam", price: 15000 },
-  { id: 3, name: "Sate Ayam", price: 25000 },
+  { id: 1, name: "Salad Buah" },
+  { id: 2, name: "Smoothie Alpukat" },
+  { id: 3, name: "Ayam Panggang Lemon" },
+  { id: 4, name: "Tumis Brokoli Wortel" },
+  { id: 5, name: "Oatmeal Pisang" },
 ];
 let cart = [];
 let orders = [];
@@ -68,7 +70,6 @@ app.post("/order", (req, res) => {
   const order = {
     id: Date.now(),
     items: [...cart],
-    total: cart.reduce((t, i) => t + i.price * i.quantity, 0),
   };
   orders.push(order);
   cart = [];
